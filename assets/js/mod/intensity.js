@@ -1,0 +1,11 @@
+var intensity = ["Barely",
+                 "Slightly",
+                 "Kinda",
+                 "So",
+                 "Very",
+                 "Double",
+                 "Super",
+                 "Triple",
+                 "Mega",
+                 "Ultra",
+                 "Insanely"]

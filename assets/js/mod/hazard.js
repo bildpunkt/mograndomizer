@@ -1,0 +1,13 @@
+var hazard = ["Pop-Up",
+              "Popup",
+              "Barrier",
+              "Jump",
+              "Stop",
+              "Breakable",
+              "Egg",
+              "Roller",
+              "Laser",
+              "Saw",
+              "Shard",
+              "Dropper",
+              "Pumpkin"]

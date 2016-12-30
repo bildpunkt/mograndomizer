@@ -1,0 +1,10 @@
+var elevation = ["Uphill",
+                 "Climb",
+                 "Ascent",
+                 "Rise",
+                 "Elevate",
+                 "Downhill",
+                 "Descent",
+                 "Fall",
+                 "Down",
+                 "Lower"]

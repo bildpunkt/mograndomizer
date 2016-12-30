@@ -1,0 +1,10 @@
+var scenery_size = ["Big",
+                    "Super",
+                    "Monster",
+                    "Small",
+                    "Tiny",
+                    "Mini",
+                    "Shrunk",
+                    "Micro",
+                    "Giant",
+                    "Colossus"]

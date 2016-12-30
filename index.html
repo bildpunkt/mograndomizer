@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mograndomizer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.2.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+<body>
+<section class="hero is-primary">
+    <div class="hero-body">
+        <div class="container">
+        <h1 class="title">
+            Mograndomizer
+        </h1>
+        <h2 class="subtitle">
+            A random generator for Distance trackmogrify keyword seeds
+        </h2>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+        <div class="content">
+            <p>Trackmogrify generates tracks based on text and specific keywords you pass it. With this generator, you can build seeds that only consist of these special keywords to spice up the random generation <em>a bit<em>. You can just copy and paste these
+                seeds into the game, no need to type them word by word!</p>
+        </div>
+        <div class="columns">
+            <div class="column is-2">
+                <label class="label" for="length">Length</label>
+                <input class="input" id="length" type="number" name="length"></input>
+                <span class="help">How many keywords?</span>
+            </div>
+            <div class="column is-2">
+                <label class="label" for="repeat">Repeat</label>
+                <input class="input" id="repeat" type="number" name="repeat"></input>
+                <span class="help">Repeat single keywords</span>
+            </div>
+            <div class="column is-2">
+                <label class="label" for="repeat" style="color: white">_</label>
+                <input class="button is-primary" type="button" id="mog" value="Mograndomize"></input>
+            </div>    
+        </div>
+        <article class="message" id="result" style="display: none;">
+            <div class="message-header">
+                Trackmogrify Seed
+            </div>
+            <div class="message-body" id="result-text">
+            </div>
+        </article>
+        <article class="message is-danger" id="lengthwarn" style="display: none">
+            <div class="message-header">
+                Error
+            </div>
+            <div class="message-body">
+                This seed includes too many keywords! Distance only seems to support seeds with 30 keywords at max, otherwise tracks will be extremely short. Here's a shorter seed to work with.
+
+                <div class="notification" id="lengthwarn-res">
+                </div>    
+            </div>
+        </article>
+    </div>
+</section>
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Mograndomizer</strong> by <a href="http://pixelde.su">pixeldesu</a>. The source code is licensed
+        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+        is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC ANS 4.0</a>.
+      </p>
+      <p>
+        <a class="icon" href="https://github.com/pixeldesu/mograndomizer">
+          <i class="fa fa-github"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+</footer>
+<!-- Put scripts below -->
+
+<!-- Mods -->
+<script type="text/javascript" src="assets/js/mod/color.js"></script>
+<script type="text/javascript" src="assets/js/mod/color_adv.js"></script>
+<script type="text/javascript" src="assets/js/mod/difficulty.js"></script>
+<script type="text/javascript" src="assets/js/mod/elevation.js"></script>
+<script type="text/javascript" src="assets/js/mod/environment.js"></script>
+<script type="text/javascript" src="assets/js/mod/exclusion.js"></script>
+<script type="text/javascript" src="assets/js/mod/hazard.js"></script>
+<script type="text/javascript" src="assets/js/mod/intensity.js"></script>
+<script type="text/javascript" src="assets/js/mod/length.js"></script>
+<script type="text/javascript" src="assets/js/mod/lighting_gbl.js"></script>
+<script type="text/javascript" src="assets/js/mod/lighting_trk.js"></script>
+<script type="text/javascript" src="assets/js/mod/random.js"></script>
+<script type="text/javascript" src="assets/js/mod/scenery_plc.js"></script>
+<script type="text/javascript" src="assets/js/mod/scenery_size.js"></script>
+<script type="text/javascript" src="assets/js/mod/scenery_type.js"></script>
+<script type="text/javascript" src="assets/js/mod/style.js"></script>
+<script type="text/javascript" src="assets/js/mod/index.js"></script>
+<!-- Mods END -->
+
+<script type="text/javascript" src="assets/js/sample.js"></script>
+<script type="text/javascript" src="assets/js/mograndom.js"></script>
+
+</body>
+</html>
