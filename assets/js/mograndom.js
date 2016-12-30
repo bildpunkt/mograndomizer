@@ -4,7 +4,7 @@ var mograndom = function() {
     var repeat = document.getElementById("repeat").value;
     var result = [];
 
-    for (var i = 0; i <= times; i++) {
+    for (var i = 1; i <= times; i++) {
         var tmp_mod = mods.sample();
         var tmp_val = tmp_mod.sample();
         
@@ -16,7 +16,7 @@ var mograndom = function() {
             result.push(tmp_val);
         }
     }
-
+    
     if (result.length > 30) {
         var warn_result = result.slice(0,29);
         document.getElementById("lengthwarn-res").innerHTML = warn_result.join(" ");
