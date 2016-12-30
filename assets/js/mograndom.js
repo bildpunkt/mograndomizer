@@ -9,7 +9,7 @@ var mograndom = function() {
         var tmp_val = tmp_mod.sample();
         
         if (repeat !== 0 || repeat !== undefined) {
-            for (var r = 1; r <= repeat; r++) {
+            for (var r = 0; r <= repeat; r++) {
                 result.push(tmp_val);
             }
         } else {
@@ -17,7 +17,7 @@ var mograndom = function() {
         }
     }
 
-    if (result.length > 31) {
+    if (result.length > 30) {
         var warn_result = result.slice(0,29);
         document.getElementById("lengthwarn-res").innerHTML = warn_result.join(" ");
         document.getElementById("lengthwarn").style.display = 'block';
