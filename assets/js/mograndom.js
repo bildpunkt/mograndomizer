@@ -21,13 +21,11 @@ var mograndom = function() {
         var warn_result = result.slice(0,29);
         document.getElementById("lengthwarn-res").innerHTML = warn_result.join(" ");
         document.getElementById("lengthwarn").style.display = 'block';
-        return false;
     } else {
         document.getElementById("lengthwarn").style.display = 'none';
+        document.getElementById("result-text").innerHTML = result.join(" ");
+        document.getElementById("result").style.display = 'block';
     }
-
-    document.getElementById("result-text").innerHTML = result.join(" ");
-    document.getElementById("result").style.display = 'block';
 }
 
 document.getElementById("mog").addEventListener("click", mograndom);
